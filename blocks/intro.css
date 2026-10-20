@@ -1,0 +1,137 @@
+
+.intro {
+  width: 100%;
+  max-width: 984px;
+  margin: 0 auto;
+  padding-top: 92px;
+}
+
+.intro__title {
+  width: 100%;
+  max-width: 830px;
+  margin: 0;
+  font-family: "fonte principal", Arial, sans-serif;
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 1.07;
+}
+
+.intro__quote {
+  width: 100%;
+  max-width: 738px;
+  margin-top: 40px;
+}
+
+.intro__quote-text {
+  margin: 0;
+  font-family: "fonte principal", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.42;
+}
+
+.intro__quote-author {
+  width: 100%;
+  max-width: 732px;
+  margin: 10px 0 0;
+  font-family: "fonte principal", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.42;
+  text-align: right;
+}
+
+.intro__content {
+  width: 100%;
+  max-width: 722px;
+  margin-top: 32px;
+}
+
+.intro__text {
+  width: 100%;
+  max-width: 722px;
+  margin: 0;
+  font-family: "fonte principal", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.63;
+}
+
+/* Adaptação para tablets */
+@media screen and (min-width: 545px) and (max-width: 1024px) {
+  .intro {
+    width: calc(100% - 48px);
+    max-width: 720px;
+  }
+
+  .intro__title {
+    max-width: 707px;
+    font-size: 45px;
+    line-height: 1.09;
+  }
+
+  .intro__quote {
+    max-width: 720px;
+  }
+
+  .intro__quote-text {
+    font-size: 24px;
+    line-height: 1.42;
+  }
+
+  .intro__quote-author {
+    max-width: 720px;
+    line-height: 1.42;
+  }
+
+  .intro__content {
+    max-width: 720px;
+  }
+
+  .intro__text {
+    max-width: 720px;
+    line-height: 1.63;
+  }
+}
+
+/* Adaptação para celulares */
+@media screen and (max-width: 544px) {
+  .intro {
+    width: calc(100% - 32px);
+    max-width: 984px;
+  }
+
+  .intro__title {
+    max-width: 288px;
+    font-size: 32px;
+    line-height: 1.09;
+  }
+
+  .intro__quote {
+    max-width: 288px;
+    margin-top: 40px;
+  }
+
+  .intro__quote-text {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .intro__quote-author {
+    max-width: 288px;
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 1.42;
+  }
+
+  .intro__content {
+    max-width: 288px;
+    margin-top: 32px;
+  }
+
+  .intro__text {
+    max-width: 288px;
+    font-size: 16px;
+    line-height: 1.63;
+  }
+}
