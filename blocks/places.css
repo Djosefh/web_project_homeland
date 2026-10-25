@@ -1,0 +1,114 @@
+
+.places {
+  width: 984px;
+  margin: 92px auto 0;
+}
+
+
+.places__place {
+  display: grid;
+  grid-template-columns: 460px 484px;
+  grid-template-areas:
+    "title artist"
+    "image-container description";
+  column-gap: 40px;
+  row-gap: 48px;
+}
+
+
+.places__place + .places__place {
+  margin-top: 80px;
+}
+
+/* Título da cidade */
+.places__title {
+  grid-area: title;
+  width: 460px;
+  margin: 0;
+  font-family: "fonte principal", Arial, sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 76px;
+}
+
+/* Imagem da cidade */
+
+.places__image-container {
+  grid-area: image-container;
+  width: 460px;
+}
+
+.places__image {
+  display: block;
+  width: 460px;
+  height: 460px;
+  object-fit: cover;
+}
+
+
+/* Bloco dos artistas */
+.places__artist {
+  grid-area: artist;
+  width: 456px;
+  align-self: start;
+}
+
+.places__artist-title {
+  margin: 0 0 8px;
+  font-family: "fonte principal", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.places__artist-name {
+  margin: 0;
+  font-family: "fonte principal", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+/* Descrição da cidade */
+.places__description {
+  grid-area: description;
+  width: 484px;
+}
+
+.places__text {
+  margin: 0 0 25px;
+  font-family: "fonte principal", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.63;
+  letter-spacing: 0;
+}
+
+.places__text:last-child {
+  margin-bottom: 0;
+}
+
+.places__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 356px;
+  min-height: 48px;
+  margin-top: 48px;
+  padding: 13px 20px;
+  gap: 10px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #0278FE 0%, #003A7B 99.98%);
+  box-shadow: 5px 5px 10px 0 #00000040;
+  color: #FFFFFF;
+  font-family: "fonte principal", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
