@@ -13,6 +13,7 @@
   object-fit: contain;
 }
 
+
 .header__content {
   display: flex;
   flex-direction: column;
@@ -21,6 +22,8 @@
   max-width: 984px;
   margin: 90px auto 0;
 }
+
+
 
 .header__title {
   width: 100%;
@@ -43,6 +46,8 @@
   text-align: center;
 }
 
+
+
 .header__image {
   display: block;
   width: 100%;
@@ -50,6 +55,8 @@
   height: auto;
   margin-top: 64px;
 }
+
+
 
 /* Adaptação para tablets */
 @media screen and (max-width: 1024px) {
@@ -84,10 +91,13 @@
     margin-top: 20px;
   }
 
-  .header__content {
-    margin-top: 50px;
-    padding: 0 16px;
-  }
+.header__content {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 50px;
+  padding: 0 16px;
+}
+
 
   .header__title {
     max-width: 100%;
@@ -110,7 +120,8 @@
   max-width: none;
   height: auto;
   margin-top: 40px;
-  align-self: center;
+  margin-left: -16px;
+  align-self: flex-start;
 }
 
 
